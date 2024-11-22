@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Peso e Valor por Cidade</title>
+    <link rel="stylesheet" href="../../static/css/cadastro_peso_valor.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Peso e Valor por Cidade</h1>
+
+        <form action="#" method="post">
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado" required></select><br><br>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required><br><br>
+
+            <label for="preco_valor">Preço por Valor do Item:</label>
+            <input type="number" id="preco_valor" name="preco_valor" step="0.01" required><br><br>
+
+            <label for="preco_peso">Preço por Peso do Item:</label>
+            <input type="number" id="preco_peso" name="preco_peso" step="0.01" required><br><br>
+
+            <button type="submit">Cadastrar</button>
+            <a href="{{ url_for('home') }}">Voltar para a Home</a>
+
+        </form>
+    </div>
+    <script src="../../static/js/cadastro_peso_valor.js"></script>
+</body>
+</html>

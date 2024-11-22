@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Cliente CNPJ</title>
+    <link rel="stylesheet" href="../../static/css/cadastro_cliente_cnpj.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Cliente CNPJ</h1>
+
+        <form method="post">
+            <label for="razao_social">Razão Social:</label>
+            <input type="text" id="razao_social" name="razao_social" required><br><br>
+
+            <label for="cnpj">CNPJ:</label>
+            <input type="text" id="cnpj" name="cnpj" required><br><br>
+
+            <label for="inscricao_estadual">Inscrição Estadual:</label>
+            <input type="text" id="inscricao_estadual" name="inscricao_estadual" required><br><br>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" requirerd><br><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" requirerd><br><br>
+
+            <button type="submit">Cadastrar</button>
+            <a href="{{ url_for('home') }}">Voltar para a Home</a>
+
+        </form>
+    </div>
+    <script src="../../static/js/cadastro_cliente_cnpj.js"></script>
+</body>
+</html>

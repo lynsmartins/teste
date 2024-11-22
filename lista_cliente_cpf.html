@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Clientes CPF</title>
+    <link rel="stylesheet" href="../../static/css/lista_cliente_cpf.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Clientes CPF</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Endereço</th>
+                    <th>Telefone</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="cliente-cpf-table-body">
+                <template id="cliente-cpf-row-template">
+                    <tr>
+                        <td class="id"></td>
+                        <td class="nome"></td>
+                        <td class="cpf"></td>
+                        <td class="endereco"></td>
+                        <td class="telefone"></td>
+                        <td>
+                            <button class="editar">Editar</button>
+                            <button class="excluir">Excluir</button>
+                        </td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+
+        <div id="excluirModal" class="modal">
+            <div class="modal-content">
+                <p>Deseja realmente excluir?</p>
+                <button id="cancelarExclusao">Cancelar</button>
+                <button id="confirmarExclusao">Sim</button>
+            </div>
+        </div>
+
+
+        <a href="cadastro_cliente_cpf.html">Cadastrar novo cliente</a>
+        <a href="../home.html">Voltar para a Home</a>
+    </div>
+
+    <script src="lista_cliente_cpf.js"></script>
+</body>
+</html>
+

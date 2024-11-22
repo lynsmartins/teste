@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Funcionários</title>
+    <link rel="stylesheet" href="../../static/css/lista_funcionario.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Funcionários</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="funcionario-table-body">
+                <template id="funcionario-row-template">
+                    <tr>
+                        <td class="id"></td>
+                        <td class="nome"></td>
+                        <td>
+                            <button class="editar">Editar</button>
+                            <button class="excluir">Excluir</button>
+                        </td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+
+        <div id="excluirModal" class="modal">
+            <div class="modal-content">
+                <p>Deseja realmente excluir?</p>
+                <button id="cancelarExclusao">Cancelar</button>
+                <button id="confirmarExclusao">Sim</button>
+            </div>
+        </div>
+
+        <a href="{{ url_for('cadastro_funcionario') }}">Cadastrar Funcionário</a>
+        <a href="{{ url_for('home') }}">Voltar para a Home</a>
+    </div>
+    <script src="../../static/js/lista_funcionario.js"></script>
+</body>
+</html>

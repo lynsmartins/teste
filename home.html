@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../static/css/home.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ambiente de Transporte</h1>
+        <h2>Home</h2>
+        <ul>
+            <li><a href="{{ url_for('cadastro_funcionario') }}">Cadastrar Funcionários</a></li>            
+            <li><a href="{{ url_for('cadastro_cliente_cpf') }}">Cadastrar Clientes CPF</a></li>
+            <li><a href="{{ url_for('cadastro_cliente_cnpj') }}">Cadastrar Clientes CNPJ</a></li>
+            <li><a href="{{ url_for('cadastro_estado')}}">Cadastrar Estados e ICMSs</a></li>
+            <li><a href="{{ url_for('cadastro_cidade') }}">Cadastrar Pesos e Valores por Cidade</a></li>
+            <li><a href="{{ url_for('cadastro_frete') }}">Cadastrar Fretes</a></li>
+            <li><a href="{{ url_for('listar_estados_html') }}">Lista de ICMS</a></li>            
+            <li><a href="{{ url_for('listar_cidades') }}">Lista de Pesos e Valores por Cidade</a></li>
+            <li><a href="{{ url_for('lista_funcionarios') }}">Lista de Funcionários</a></li>
+            <li><a href="{{ url_for('listar_fretes') }}">Lista de Fretes</a></li>
+            <!-- tá faltando listar clientes -->
+        </ul>
+    </div>
+</body>
+</html>

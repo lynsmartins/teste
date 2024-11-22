@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Fretes</title>
+    <link rel="stylesheet" href="../../static/css/lista_frete.css"> </head>
+<body>
+    <div class="container">
+        <h1>Lista de Fretes</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Remetente</th>
+                    <th>Destinatário</th>
+                    <th>Origem</th>
+                    <th>Destino</th>
+                    <th>Data</th>
+                    <th>Peso/Valor</th>
+                    <th>Valor Frete</th>
+                    <th>Pedágio</th>
+                    <th>ICMS</th>
+                    <th>Quem Paga</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="frete-table-body">
+                <template id="frete-row-template">
+                    <tr>
+                        <td class="id"></td>
+                        <td class="remetente"></td>
+                        <td class="destinatario"></td>
+                        <td class="origem"></td>
+                        <td class="destino"></td>
+                        <td class="data"></td>
+                        <td class="peso_valor"></td>
+                        <td class="valor_frete"></td>
+                        <td class="pedagio"></td>
+                        <td class="icms"></td>
+                        <td class="quem_paga"></td>
+                        <td>
+                            <button class="editar">Editar</button>
+                            <button class="excluir">Excluir</button>
+                        </td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+
+        <div id="excluirModal" class="modal">
+            <div class="modal-content">
+                <p>Deseja realmente excluir?</p>
+                <button id="cancelarExclusao">Cancelar</button>
+                <button id="confirmarExclusao">Sim</button>
+            </div>
+        </div>
+
+        <a href="cadastro_frete.html">Cadastrar Frete</a>
+        <a href="../home.html">Voltar para a Home</a>
+    </div>
+
+    <script src="lista_frete.js"></script>
+</body>
+</html>

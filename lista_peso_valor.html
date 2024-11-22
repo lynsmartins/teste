@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Peso e Valor por Cidade</title>
+    <link rel="stylesheet" href="../../static/css/lista_peso_valor.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Peso e Valor por Cidade</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Estado</th>
+                    <th>Cidade</th>
+                    <th>Preço por Valor</th>
+                    <th>Preço por Peso</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="peso-valor-table-body">
+                <template id="peso-valor-row-template">
+                    <tr>
+                        <td class="id"></td>
+                        <td class="estado"></td>
+                        <td class="cidade"></td>
+                        <td class="preco_valor"></td>
+                        <td class="preco_peso"></td>
+                        <td>
+                            <button class="editar">Editar</button>
+                            <button class="excluir">Excluir</button>
+                        </td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+
+        <div id="excluirModal" class="modal">
+            <div class="modal-content">
+                <p>Deseja realmente excluir?</p>
+                <button id="cancelarExclusao">Cancelar</button>
+                <button id="confirmarExclusao">Sim</button>
+            </div>
+        </div>
+
+        <a href="cadastro_peso_valor.html">Cadastrar Peso e Valor</a>
+        <a href="../home.html">Voltar para a Home</a>
+    </div>
+    <script src="lista_peso_valor.js"></script>
+</body>
+</html>

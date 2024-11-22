@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Clientes CNPJ</title>
+    <link rel="stylesheet" href="../../static/css/lista_cliente_cnpj.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Clientes CNPJ</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Razão Social</th>
+                    <th>CNPJ</th>
+                    <th>Inscrição Estadual</th>
+                    <th>Endereço</th>
+                    <th>Telefone</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="cliente-cnpj-table-body">
+                <template id="cliente-cnpj-row-template">
+                    <tr>
+                        <td class="id"></td>
+                        <td class="razao_social"></td>
+                        <td class="cnpj"></td>
+                        <td class="inscricao_estadual"></td>
+                        <td class="endereco"></td>
+                        <td class="telefone"></td>
+                        <td>
+                            <button class="editar">Editar</button>
+                            <button class="excluir">Excluir</button>
+                        </td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+
+        <div id="excluirModal" class="modal">
+            <div class="modal-content">
+                <p>Deseja realmente excluir?</p>
+                <button id="cancelarExclusao">Cancelar</button>
+                <button id="confirmarExclusao">Sim</button>
+            </div>
+        </div>
+
+        <a href="cadastro_cliente_cnpj.html">Cadastrar novo cliente</a>
+        <a href="../home.html">Voltar para a Home</a>
+    </div>
+    <script src="lista_cliente_cnpj.js"></script>
+</body>
+</html>

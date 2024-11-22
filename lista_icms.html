@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de ICMS</title>
+    <link rel="stylesheet" href="../../static/css/lista_icms.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de ICMS por Estado</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Estado</th>
+                    <th>ICMS Local</th>
+                    <th>ICMS Outro Estado</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="icms-table-body">
+                <template id="icms-row-template">
+                    <tr>
+                        <td class="estado"></td>
+                        <td class="icms_local"></td>
+                        <td class="icms_outro"></td>
+                        <td>
+                            <button class="editar">Editar</button>
+                            <button class="excluir">Excluir</button>
+                        </td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+
+        <div id="excluirModal" class="modal">
+            <div class="modal-content">
+                <p>Deseja realmente excluir?</p>
+                <button id="cancelarExclusao">Cancelar</button>
+                <button id="confirmarExclusao">Sim</button>
+            </div>
+        </div>
+
+
+        <a href="cadastro_icms.html">Cadastrar ICMS</a>
+        <a href="../home.html">Voltar para a Home</a>
+    </div>
+
+    <script src="lista_icms.js"></script>
+</body>
+</html>

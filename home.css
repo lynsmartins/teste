@@ -1,0 +1,50 @@
+body {
+    font-family: sans-serif;
+    margin: 0; /* Remove as margens padrão do body */
+    background-color: #f4f4f4; /* Cor de fundo suave */
+    color: #333; /* Cor de texto escura */
+}
+
+.container {
+    width: 80%;
+    max-width: 960px; /* Define uma largura máxima */
+    margin: 20px auto; /* Centraliza horizontalmente */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50; /* Cor de título */
+}
+
+h2 {
+    text-align: center;
+    color: #7f8c8d; /* Cor de subtítulo */
+    margin-top: -10px; /* Ajusta o espaçamento entre os títulos */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+li a {
+    display: block;
+    padding: 12px 16px;
+    background-color: #e0f2f7; /* Cor de fundo do link */
+    color: #2980b9; /* Cor do texto do link */
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+li a:hover {
+    background-color: #c5eff7; /* Cor de fundo ao passar o mouse */
+}

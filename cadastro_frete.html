@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Frete</title>
+    <link rel="stylesheet" href="../../static/css/cadastro_frete.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Frete</h1>
+
+        <form action="#" method="post">
+            <label for="remetente">Nome do Remetente:</label>
+            <select id="remetente" name="remetente" required>
+                </select><br><br>
+
+            <label for="destinatario">Nome do Destinatário:</label>
+            <select id="destinatario" name="destinatario" required>
+                </select><br><br>
+
+            <label for="funcionario">Nome do Funcionário:</label>
+            <select id="funcionario" name="funcionario" required>
+                </select><br><br>
+
+            <label for="cidade_origem">Cidade de Origem:</label>
+            <select id="cidade_origem" name="cidade_origem" required>
+                </select><br><br>
+
+            <label for="cidade_destino">Cidade de Destino:</label>
+            <select id="cidade_destino" name="cidade_destino" onchange="atualizarFrete()" required>
+                </select><br><br>
+
+            <label for="data_frete">Data do Frete:</label>
+            <input type="date" id="data_frete" name="data_frete" required><br><br>
+
+            <label for="peso_valor">Frete por Peso ou Valor:</label>
+            <select id="peso_valor" name="peso_valor" onchange="atualizarFrete()" required>
+                </select><br><br>
+
+            <label for="valor_frete">Valor do Frete:</label>
+            <input type="number" id="valor_frete" name="valor_frete" step="0.01"  readonly><br><br>
+
+            <label for="pedagio">Pedágio:</label>
+            <input type="number" id="pedagio" name="pedagio" step="0.01"><br><br>
+
+            <label for="icms">ICMS:</label>
+            <input type="text" id="icms" name="icms" readonly><br><br>
+
+            <label for="quem_paga">Quem paga o frete?</label>
+            <select id="quem_paga" name="quem_paga" required>
+                </select><br><br>
+
+            <button type="submit">Cadastrar</button>
+            <a href="{{ url_for('home') }}">Voltar para a Home</a>
+
+        </form>
+    </div>
+    <script src="../../static/js/cadastro_frete.js"></script>
+</body>
+</html>
